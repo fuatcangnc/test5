@@ -1,4 +1,6 @@
 ---
+import PageSeo from "../components/wuppy/PageSeo.astro";
+import PageCode from "../components/wuppy/PageCode.astro";
 import '@/styles/globals.css'
 import { Font } from 'astro:assets'
 import { SEO } from 'astro-seo'
@@ -49,6 +51,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <Hreflang translated={translated} />
+    <PageSeo />
   </head>
   <body class="font-sans">
     <SiteHeader locale={locale} translated={translated} />
@@ -62,5 +65,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
       window.addEventListener('pointerdown', loadInit, { once: true })
       window.addEventListener('keydown', loadInit, { once: true })
     </script>
+    <PageCode />
   </body>
 </html>

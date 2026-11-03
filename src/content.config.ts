@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content'
-import { glob } from 'astro/loaders'
+import { glob, file } from 'astro/loaders'
 import { z } from 'astro/zod'
 
 // Translations live side by side: `site/<locale>.json`, `menus/<locale>.json`, `services/<locale>/<slug>.md`,
@@ -233,4 +233,8 @@ const menus = defineCollection({
   }),
 })
 
-export const collections = { site, settings, services, posts, menus }
+const pageSettings = defineCollection({
+  loader: file('src/content/page-settings.json'),
+})
+
+export const collections = { site, settings, services, posts, menus, pageSettings }

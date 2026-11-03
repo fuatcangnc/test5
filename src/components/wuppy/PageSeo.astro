@@ -1,0 +1,63 @@
+---
+// SEO, Open Graph, schema and head code of a page, from the layout's defaults and the page's WuppyCMS settings.
+// Without props it writes only what was set in WuppyCMS, so it can sit next to a layout's own tags.
+import { getImage } from 'astro:assets'
+import { AstroSeo } from '@lexingtonthemes/seo'
+import { isHidden, pageSettings } from './page-settings'
+
+interface Props {
+  title?: string
+  description?: string
+  canonical?: string | URL
+  /** Share image when the page has none of its own. */
+  image?: string
+  siteName?: string
+  /** Open Graph locale, e.g. "en_US". */
+  locale?: string
+}
+
+const props = Astro.props
+const p = await pageSettings(Astro.routePattern, Astro.currentLocale)
+const abs = (url?: string) => (url ? new URL(url, Astro.site ?? Astro.url).href : undefined)
+// Images picked from the repo in WuppyCMS are paths relative to src/content/page-settings.json (or /… in public/).
+const images = import.meta.glob<ImageMetadata>('/src/**/*.{png,jpg,jpeg,webp,gif,avif}', { import: 'default' })
+const asset = async (url?: string) => {
+  if (!url || /^([a-z]+:)?\/\//i.test(url) || url.startsWith('/')) return url
+  const load = images[new URL(url, 'file:///src/content/page-settings.json').pathname]
+  return load ? (await getImage({ src: await load() })).src : undefined
+}
+// The page name set in WuppyCMS is the title tag when no SEO title is set.
+const title = p.seo?.title || p.title || props.title
+const description = p.seo?.description || props.description
+const canonical = abs(p.seo?.canonical || props.canonical?.toString())
+const ogTitle = p.og?.title || title
+const ogDescription = p.og?.description || description
+const ogImage = abs((await asset(p.og?.image)) || props.image)
+let jsonLd: Record<string, unknown> | Record<string, unknown>[] | undefined
+try {
+  jsonLd = p.schema?.trim() ? JSON.parse(p.schema) : undefined
+} catch {
+  // Broken JSON-LD is left out rather than breaking the build.
+}
+// Site search (Pagefind) reads these; empty means the same as the SEO title, description and share image.
+const search = [
+  p.search?.title && { 'data-pagefind-meta': 'title[content]', content: p.search.title },
+  p.search?.description && { 'data-pagefind-meta': 'description[content]', content: p.search.description },
+  p.search?.image && { 'data-pagefind-meta': 'image[content]', content: abs(await asset(p.search.image)) },
+].filter(Boolean) as Record<string, string>[]
+---
+
+<AstroSeo
+  title={title}
+  description={description}
+  canonical={canonical}
+  noindex={isHidden(p)}
+  openGraph={ogTitle || ogDescription || ogImage
+    ? { url: canonical, type: 'website', title: ogTitle, description: ogDescription, images: ogImage ? [{ url: ogImage, alt: ogTitle }] : undefined, site_name: props.siteName, locale: props.locale }
+    : undefined}
+  twitter={ogTitle ? { cardType: ogImage ? 'summary_large_image' : 'summary' } : undefined}
+  jsonLd={jsonLd}
+/>
+{p.author && <meta name="author" content={p.author} />}
+{search.map((m) => <meta {...m} />)}
+{p.head && <Fragment set:html={p.head} />}
