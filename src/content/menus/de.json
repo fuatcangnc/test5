@@ -30,6 +30,10 @@
     {
       "label": "Kontakt",
       "href": "/contact/"
+    },
+    {
+      "label": "Home",
+      "href": "/"
     }
   ],
   "footer": [
