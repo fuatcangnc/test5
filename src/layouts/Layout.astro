@@ -1,4 +1,7 @@
 ---
+import PageSeo from "../components/wuppy/PageSeo.astro";
+import PageCode from "../components/wuppy/PageCode.astro";
+import { pageSettings as wuppyPageSettings } from "../components/wuppy/page-settings";
 import '@/styles/globals.css'
 import { Font } from 'astro:assets'
 import { SEO } from 'astro-seo'
@@ -26,6 +29,7 @@ const rawDescription = Astro.props.description ?? t.hero.text
 const title = rawTitle.length > 60 ? `${rawTitle.slice(0, 57).trimEnd()}...` : rawTitle
 const description = rawDescription.length > 155 ? `${rawDescription.slice(0, 152).trimEnd()}...` : rawDescription
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
+const wuppySearchExcluded = (await wuppyPageSettings(Astro.routePattern, Astro.currentLocale)).search?.exclude
 ---
 
 <!doctype html>
@@ -49,8 +53,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <Hreflang translated={translated} />
+    <PageSeo />
   </head>
-  <body class="font-sans">
+  <body data-pagefind-ignore={wuppySearchExcluded ? 'all' : undefined} class="font-sans">
     <SiteHeader locale={locale} translated={translated} />
     <slot />
     <SiteFooter locale={locale} />
@@ -62,5 +67,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
       window.addEventListener('pointerdown', loadInit, { once: true })
       window.addEventListener('keydown', loadInit, { once: true })
     </script>
+    <PageCode />
   </body>
 </html>
