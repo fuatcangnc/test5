@@ -1,5 +1,8 @@
 {
   "/[...locale]/about": {
-    "title": "test2"
+    "title": "test2",
+    "og": {
+      "image": "../assets/site-images/images/about.webp"
+    }
   }
 }
