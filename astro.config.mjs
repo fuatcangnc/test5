@@ -2,6 +2,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
+import og from "astro-og";
 
 // https://astro.build/config
 export default defineConfig({
@@ -39,6 +40,7 @@ export default defineConfig({
   ],
   integrations: [
     sitemap(),
+    og(),
     icon({ include: { lucide: ["arrow-right", "clock-3", "mail", "map-pin", "phone"], "simple-icons": ["facebook", "instagram", "youtube"] } }),
   ],
   vite: { plugins: [tailwindcss()] },

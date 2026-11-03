@@ -57,6 +57,9 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.10
         version: 0.9.10(prettier@3.9.6)(typescript@5.9.3)
+      astro-og:
+        specifier: ^0.3.2
+        version: 0.3.2(astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -1236,6 +1239,11 @@ packages:
   astro-icon@1.2.0:
     resolution: {integrity: sha512-0848V2WZuTPhqGSqLeZimLJZ5wmamMtWYzvA2kvg8s2DrUPZ3/nrTcHJWN0eJHt62jy7uvNxgTNiUJGIr7JNxg==}
     engines: {node: '>=22.12.0'}
+
+  astro-og@0.3.2:
+    resolution: {integrity: sha512-87soXn7bSVzcY+9YyG5xQt/F4J4hsZ6ZKXAfRzBwqiQ2FF+esRLpQU62v6IKQHnlvzkQvmbUmeAKaEP0W1SM2g==}
+    peerDependencies:
+      astro: '>=5.0.0'
 
   astro-seo@1.2.0:
     resolution: {integrity: sha512-ZqS2ZLKJ9GZwcONho9W95xkGBWuPpikTsMBzjuq/6CKtKUEgMDbSZkoLwoZsmLVq/p52T4z7JwgjC3AtMg7Trg==}
@@ -2637,6 +2645,9 @@ packages:
   powershell-utils@0.2.0:
     resolution: {integrity: sha512-ZlsFlG7MtSFCoc5xreOvBAozCJ6Pf06opgJjh9ONEv418xpZSAzNjstD36C6+JwOnfSqOW/9uDkqKjezTdxZhw==}
     engines: {node: '>=20'}
+
+  preact@10.28.2:
+    resolution: {integrity: sha512-lbteaWGzGHdlIuiJ0l2Jq454m6kcpI1zNje6d8MlGAFlYvP2GO4ibnat7P74Esfz4sPTdM6UxtTwh/d3pwM9JA==}
 
   prettier@3.9.6:
     resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
@@ -4588,6 +4599,11 @@ snapshots:
       '@iconify/types': 2.0.0
       '@iconify/utils': 3.1.7
 
+  astro-og@0.3.2(astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)):
+    dependencies:
+      astro: 7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)
+      preact: 10.28.2
+
   astro-seo@1.2.0: {}
 
   astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0):
@@ -5963,6 +5979,8 @@ snapshots:
   powershell-utils@0.1.0: {}
 
   powershell-utils@0.2.0: {}
+
+  preact@10.28.2: {}
 
   prettier@3.9.6: {}
 
