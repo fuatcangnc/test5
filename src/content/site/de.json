@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "cta": "Angebot anfordern",
+  "topbar": "Planung, Umsetzung und Betreuung für wachsende Unternehmen.",
+  "whatsapp": {
+    "message": "Hallo, ich möchte mehr über Ihre Leistungen erfahren.",
+    "online": "Online",
+    "help": "Brauchen Sie Hilfe?",
+    "ask": "Per WhatsApp fragen"
+  },
+  "hero": {
+    "eyebrow": "Beratung · Projekte · Support",
+    "title": "Wir helfen Ihrem Unternehmen,",
+    "accent": "sicher zu wachsen",
+    "text": "Ein kleines Team mit viel Erfahrung. Wir planen, realisieren und betreuen die Projekte, die Ihr Unternehmen voranbringen – pünktlich und im Budget.",
+    "primary": "Kostenloses Angebot",
+    "rating": "Hunderte 5-Sterne-Bewertungen bei Google",
+    "panel": "So arbeiten wir",
+    "status": "Im Plan"
+  },
+  "highlights": [
+    "Kostenloses Erstgespräch",
+    "Feste, transparente Preise",
+    "Betreuung nach dem Start"
+  ],
+  "metrics": [
+    {
+      "value": "12+",
+      "label": "Jahre Erfahrung"
+    },
+    {
+      "value": "850+",
+      "label": "Abgeschlossene Projekte"
+    },
+    {
+      "value": "98%",
+      "label": "Zufriedene Kunden"
+    }
+  ],
+  "services": {
+    "badge": "Was wir tun",
+    "title": "Leistungen, die Sie",
+    "accent": "voranbringen",
+    "intro": "Alles, was Sie brauchen – von der ersten Idee bis zum Tagesgeschäft.",
+    "more": "Mehr erfahren",
+    "all": "Alle Leistungen",
+    "help": "Nicht sicher, wo Sie anfangen sollen? Wir finden gemeinsam die passende Lösung.",
+    "details": "Details",
+    "count": "Leistungen"
+  },
+  "pillars": {
+    "badge": "Zwei Wege, wie wir helfen",
+    "title": "Professionelle Leistungen und",
+    "accent": "praktische Ratgeber",
+    "text": "Wählen Sie, was Sie heute brauchen: tatkräftige Hilfe unseres Teams oder kostenlose Ratgeber für eigene Schritte.",
+    "view": "Ansehen",
+    "items": [
+      {
+        "title": "Unsere Leistungen",
+        "subtitle": "Gemeinsam mit Ihnen umgesetzt",
+        "tag": "Teams & Unternehmen",
+        "text": "Von der Strategie bis zur Umsetzung arbeitet unser Team Seite an Seite mit Ihrem, bis die Aufgabe erledigt ist.",
+        "list": "Beliebte Leistungen",
+        "bullets": [
+          "Kostenloses Erstgespräch",
+          "Feste Preise",
+          "Ein fester Ansprechpartner"
+        ],
+        "action": "Alle Leistungen"
+      },
+      {
+        "title": "Ratgeber & Wissen",
+        "subtitle": "Lernen im eigenen Tempo",
+        "tag": "Kostenlose Inhalte",
+        "text": "Kurze, praxisnahe Artikel zu den Fragen, die wir am häufigsten hören.",
+        "list": "Neueste Artikel",
+        "bullets": [
+          "Praktische Tipps",
+          "Echte Beispiele",
+          "Regelmäßig aktualisiert"
+        ],
+        "action": "Zum Blog"
+      }
+    ]
+  },
+  "why": {
+    "badge": "Warum wir",
+    "title": "Warum Unternehmen mit uns arbeiten",
+    "text": "Klare Kommunikation, ehrliche Preise und ein Team, dem Ihre Ergebnisse wichtig sind.",
+    "features": [
+      {
+        "title": "Erfahrenes Team",
+        "text": "Jahrelange Praxis in vielen Branchen."
+      },
+      {
+        "title": "Klarer Ablauf",
+        "text": "Sie wissen immer, was als Nächstes passiert und was es kostet."
+      },
+      {
+        "title": "Schnelle Antwort",
+        "text": "Die meisten Fragen beantworten wir noch am selben Werktag."
+      },
+      {
+        "title": "Langfristige Betreuung",
+        "text": "Auch lange nach dem Start bleiben wir an Ihrer Seite."
+      }
+    ],
+    "stats": [
+      {
+        "value": 12,
+        "suffix": "+",
+        "label": "Jahre",
+        "text": "Praktische Erfahrung."
+      },
+      {
+        "value": 850,
+        "suffix": "+",
+        "label": "Projekte",
+        "text": "Für Kunden jeder Größe umgesetzt."
+      },
+      {
+        "value": 98,
+        "suffix": "%",
+        "label": "Zufriedenheit",
+        "text": "Unserer Kunden empfehlen uns weiter."
+      },
+      {
+        "value": 40,
+        "suffix": "+",
+        "label": "Partner",
+        "text": "Unternehmen, mit denen wir jedes Jahr arbeiten."
+      }
+    ]
+  },
+  "process": {
+    "badge": "So funktioniert's",
+    "title": "Vom ersten Gespräch bis zum Ergebnis",
+    "text": "Ein einfacher, bewährter Ablauf, der jedes Projekt auf Kurs hält.",
+    "kicker": "Kostenlose Beratung",
+    "center": "Sprechen wir über Ihr Projekt",
+    "action": "Schreiben Sie uns",
+    "steps": [
+      {
+        "title": "Analyse",
+        "text": "Wir hören zu, stellen Fragen und verstehen Ihre Ziele."
+      },
+      {
+        "title": "Planung",
+        "text": "Sie erhalten einen klaren Plan mit Umfang, Zeitrahmen und Preis."
+      },
+      {
+        "title": "Umsetzung",
+        "text": "Unser Team erledigt die Arbeit und hält Sie auf dem Laufenden."
+      },
+      {
+        "title": "Betreuung",
+        "text": "Wir messen die Ergebnisse und verbessern gemeinsam weiter."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Kundenstimmen",
+    "title": "Echtes Feedback.",
+    "accent": "Echte Ergebnisse.",
+    "text": "Was unsere Kunden über die Zusammenarbeit sagen.",
+    "see": "Bewertungen bei Google",
+    "source": "Google-Bewertung",
+    "verified": "Verifiziert",
+    "prev": "Vorherige Bewertung",
+    "next": "Nächste Bewertung",
+    "items": [
+      {
+        "name": "Sabine Müller",
+        "role": "Betriebsleiterin",
+        "project": "Beratung",
+        "quote": "Sie haben unser Problem in einem Termin verstanden und uns einen Plan gegeben, den wir wirklich umsetzen konnten."
+      },
+      {
+        "name": "Thomas Weber",
+        "role": "Gründer",
+        "project": "Projektmanagement",
+        "quote": "Pünktlich, im Budget und immer erreichbar. Genau das, was wir gebraucht haben."
+      },
+      {
+        "name": "Laura Schneider",
+        "role": "Büroleiterin",
+        "project": "Support",
+        "quote": "Freundlich, schnell und zuverlässig. Unser Team fühlt sich gut aufgehoben."
+      }
+    ]
+  },
+  "quote": {
+    "badge": "Schnelles Angebot",
+    "title": "Erzählen Sie uns von Ihrem Projekt",
+    "accent": "und erhalten Sie ein Angebot",
+    "text": "Teilen Sie uns ein paar Details mit, und wir antworten mit einem klaren Plan und Preis.",
+    "steps": [
+      {
+        "title": "Antwort innerhalb eines Tages",
+        "text": "Wir prüfen Ihre Anfrage und antworten noch am selben Werktag."
+      },
+      {
+        "title": "Klare Festpreise",
+        "text": "Keine versteckten Kosten: Sie sehen den vollen Preis vor dem Start."
+      },
+      {
+        "title": "Unverbindlich",
+        "text": "Das Erstgespräch ist immer kostenlos."
+      }
+    ],
+    "hotline": "Direkte Leitung"
+  },
+  "form": {
+    "eyebrow": "Kostenloses Angebot",
+    "title": "Angebot anfordern",
+    "text": "Sagen Sie uns, was Sie brauchen, und wir melden uns in Kürze.",
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Ihr Name",
+    "phone": "Telefon",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Name des Unternehmens",
+    "service": "Leistung",
+    "choose": "Leistung wählen",
+    "details": "Projektdetails",
+    "detailsPlaceholder": "Beschreiben Sie Ihr Projekt kurz...",
+    "consent": "Ich bin einverstanden, dass meine Angaben zur Erstellung eines Angebots verwendet werden.",
+    "send": "Per WhatsApp senden",
+    "safe": "Ihre Daten sind sicher",
+    "reply": "Antwort meist am selben Tag",
+    "sent": "WhatsApp wird mit Ihrer Anfrage geöffnet...",
+    "heading": "Neue Angebotsanfrage"
+  },
+  "blog": {
+    "badge": "Wissen",
+    "title": "Blog",
+    "intro": "Neuigkeiten, Tipps und Geschichten aus unserem Team.",
+    "readMore": "Weiterlesen",
+    "all": "Alle Artikel",
+    "related": "Ähnliche Artikel",
+    "summary": "Zusammenfassung",
+    "consultTitle": "Haben Sie eine Frage zu diesem Thema?",
+    "consultText": "Schreiben Sie uns – unser Team hilft Ihnen gerne weiter.",
+    "consultAction": "Fragen Sie uns"
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Häufige Fragen",
+    "text": "Schnelle Antworten auf die Fragen, die wir am häufigsten hören.",
+    "items": [
+      {
+        "question": "Wie fangen wir an?",
+        "answer": "Schreiben Sie uns oder rufen Sie an. Wir vereinbaren ein kostenloses Erstgespräch, um Ihren Bedarf zu verstehen."
+      },
+      {
+        "question": "Was kostet ein Projekt?",
+        "answer": "Das hängt vom Umfang ab. Nach dem Erstgespräch erhalten Sie einen schriftlichen Festpreis."
+      },
+      {
+        "question": "Wie lange dauert es?",
+        "answer": "Kleine Projekte dauern einige Wochen; größere planen wir in klaren Phasen."
+      },
+      {
+        "question": "Bieten Sie Betreuung nach dem Projekt an?",
+        "answer": "Ja. Flexible Supportpakete sorgen dafür, dass Sie nie allein sind."
+      }
+    ],
+    "bannerTitle": "Haben Sie eine Frage?",
+    "bannerAccent": "Sprechen Sie mit unserem Team.",
+    "bannerText": "Schreiben Sie uns, und wir antworten schnell."
+  },
+  "ctaBanner": {
+    "eyebrow": "Lassen Sie uns zusammenarbeiten",
+    "title": "Bereit für den nächsten Schritt?",
+    "text": "Erzählen Sie uns von Ihren Zielen, und wir zeigen Ihnen, wie wir helfen können.",
+    "help": "Brauchen Sie Hilfe?",
+    "call": "Rufen Sie uns an"
+  },
+  "about": {
+    "eyebrow": "Unternehmen",
+    "title": "Über uns",
+    "intro": "Wir sind ein unabhängiges Unternehmen, bei dem Menschen und Qualität an erster Stelle stehen.",
+    "kicker": "Unser Ansatz",
+    "heading": "Wir machen aus komplexen Problemen klare Pläne.",
+    "body": "Unser Team vereint Planung, Design und Technik unter einem Dach. Wir hören zuerst zu und entwickeln dann Lösungen, die zu Ihren Zielen und Ihrem Budget passen.",
+    "principles": "Unsere Grundsätze",
+    "principlesTitle": "Dieselben vier Grundsätze in jedem Projekt.",
+    "band": "Treffen wir gemeinsam die richtige Entscheidung."
+  },
+  "service": {
+    "scope": "Was enthalten ist",
+    "title": "Von Anfang an richtig planen.",
+    "body": "Jedes Projekt beginnt mit einer kurzen Prüfung Ihrer Ziele, Ihres Zeitplans und Budgets. Dann vereinbaren wir einen klaren Umfang, damit Sie genau wissen, was Sie bekommen.",
+    "checks": "Was wir prüfen",
+    "checkItems": [
+      "Ihre Ziele und wie wir Erfolg messen",
+      "Bestehende Tools, Abläufe und Team",
+      "Zeitplan, Budget und Risiken",
+      "Nächste Schritte und Zuständigkeiten"
+    ],
+    "stepsTitle": "Vier Schritte, keine Überraschungen.",
+    "sideKicker": "Fachliche Unterstützung",
+    "sideTitle": "Finden wir den richtigen Ansatz für Sie.",
+    "sideText": "Teilen Sie uns ein paar Details mit, und wir melden uns mit einem Plan.",
+    "sideList": [
+      "Kostenloses Erstgespräch",
+      "Schriftlicher Umfang und Preis",
+      "Ein fester Ansprechpartner"
+    ],
+    "related": "Weitere Leistungen",
+    "relatedTitle": "Ähnliche Leistungen.",
+    "formTitle": "Angebot erhalten:",
+    "formHeading": "Planen wir Ihr Projekt gemeinsam.",
+    "formText": "Wir klären Umfang, Zeitrahmen und Kosten und senden Ihnen einen einfachen Plan."
+  },
+  "contact": {
+    "eyebrow": "Kontakt & Angebot",
+    "title": "Kontakt",
+    "intro": "Haben Sie eine Frage oder ein Projekt im Kopf? Schreiben Sie uns – wir antworten innerhalb eines Werktags.",
+    "kicker": "Kontakt",
+    "heading": "Schreiben Sie uns.",
+    "text": "Erzählen Sie uns von Ihrem Projekt, und unser Team meldet sich bei Ihnen.",
+    "office": "Unser Büro",
+    "phoneEmail": "Telefon & E-Mail",
+    "hours": "Öffnungszeiten",
+    "hoursValue": "Mo–Fr: 09:00–18:00",
+    "closed": "Samstag & Sonntag: geschlossen",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "footer": {
+    "tagline": "Wir planen, entwickeln und betreuen Projekte, die Unternehmen voranbringen.",
+    "rights": "Alle Rechte vorbehalten.",
+    "contact": "Kontakt & Büro",
+    "trust": [
+      "Kostenlose Beratung",
+      "Feste Preise",
+      "Langfristige Betreuung"
+    ]
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "home": "Zur Startseite"
+  }
+}
