@@ -3,6 +3,8 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 import og from "astro-og";
+import { withWuppyFilter } from "./src/components/wuppy/sitemap-filter.mjs";
+import wuppySeo from "./src/components/wuppy/seo.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -39,7 +41,8 @@ export default defineConfig({
     },
   ],
   integrations: [
-    sitemap(),
+    wuppySeo(),
+    sitemap(withWuppyFilter()),
     og(),
     icon({ include: { lucide: ["arrow-right", "clock-3", "mail", "map-pin", "phone"], "simple-icons": ["facebook", "instagram", "youtube"] } }),
   ],
