@@ -17,7 +17,8 @@ interface Props {
 
 const props = Astro.props
 const p = await pageSettings(Astro.routePattern, Astro.currentLocale)
-const abs = (url?: string) => (url ? new URL(url, Astro.site ?? Astro.url).href : undefined)
+// In astro dev, against the dev server: the site URL doesn't serve this build's images yet (a toolbar preview would show none).
+const abs = (url?: string) => (url ? new URL(url, (import.meta.env.DEV ? Astro.url : Astro.site) ?? Astro.url).href : undefined)
 // The page name set in WuppyCMS is the title tag when no SEO title is set.
 const title = p.seo?.title || p.title || props.title
 const description = p.seo?.description || props.description
