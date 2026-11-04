@@ -5,7 +5,7 @@
  */
 interface Props {
   slug?: string;
-  /** Classes for the wrapper, e.g. your container: <WuppyComments class="container" />. */
+  /** Tailwind classes for the wrapper, e.g. <WuppyComments class="max-w-5xl" />. */
   class?: string;
 }
 const { slug = Astro.url.pathname.replace(/\/+$/, "") || "/", class: className } = Astro.props;
@@ -17,12 +17,15 @@ const { slug = Astro.url.pathname.replace(/\/+$/, "") || "/", class: className }
 <script is:inline async src="http://localhost:4321/comments/embed.js"></script>
 
 <style>
-  /* A readable column; set --wuppy-comments-width or pass your own container class. */
-  .wuppy-comments {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: var(--wuppy-comments-width, 48rem);
-    margin-inline: auto;
-    padding: 3rem 1rem;
+  /* A readable column. It sits in the base layer, so your Tailwind classes win: <WuppyComments class="max-w-5xl" />. */
+  @layer base {
+    .wuppy-comments {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 48rem;
+      margin-inline: auto;
+      padding: 3rem 1rem;
+      --wuppy-comments-width: none;
+    }
   }
 </style>
