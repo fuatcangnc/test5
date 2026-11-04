@@ -1,0 +1,13 @@
+---
+/**
+ * Comments by WuppyCMS (self-hosted at http://localhost:4321). Put <WuppyComments /> where the comments go.
+ * Each page gets its own thread, keyed by its path; pass `slug` to share or rename one.
+ */
+interface Props {
+  slug?: string;
+}
+const { slug = Astro.url.pathname.replace(/\/+$/, "") || "/" } = Astro.props;
+---
+
+<div data-wuppy-comments data-site-key="7DLiojiZeWgiXUXW" data-slug={slug}></div>
+<script is:inline async src="http://localhost:4321/comments/embed.js"></script>
