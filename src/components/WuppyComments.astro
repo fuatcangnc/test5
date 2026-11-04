@@ -5,9 +5,24 @@
  */
 interface Props {
   slug?: string;
+  /** Classes for the wrapper, e.g. your container: <WuppyComments class="container" />. */
+  class?: string;
 }
-const { slug = Astro.url.pathname.replace(/\/+$/, "") || "/" } = Astro.props;
+const { slug = Astro.url.pathname.replace(/\/+$/, "") || "/", class: className } = Astro.props;
 ---
 
-<div data-wuppy-comments data-site-key="7DLiojiZeWgiXUXW" data-slug={slug}></div>
+<section class:list={["wuppy-comments", className]}>
+  <div data-wuppy-comments data-site-key="7DLiojiZeWgiXUXW" data-slug={slug}></div>
+</section>
 <script is:inline async src="http://localhost:4321/comments/embed.js"></script>
+
+<style>
+  /* A readable column; set --wuppy-comments-width or pass your own container class. */
+  .wuppy-comments {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: var(--wuppy-comments-width, 48rem);
+    margin-inline: auto;
+    padding: 3rem 1rem;
+  }
+</style>
