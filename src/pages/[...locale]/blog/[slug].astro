@@ -10,5 +10,5 @@ const { locale, entry } = Astro.props
 ---
 
 <Layout locale={locale} title={entry.data.title} description={entry.data.description} translated={await translations('posts', entry.slug)}>
-  <main><PostDetail locale={locale} post={entry} /><WuppyComments /></main>
+  <main><WuppyComments /><PostDetail locale={locale} post={entry} /></main>
 </Layout>
